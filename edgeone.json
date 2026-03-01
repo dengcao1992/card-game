@@ -1,42 +1,42 @@
 {
   "headers": [
     {
-      "source": "/0.1/Build/*.js.gz",
+      "source": "/0.1/Build/0.1.js.gz",
       "headers": [
         { "key": "Content-Type", "value": "application/javascript" },
         { "key": "Content-Encoding", "value": "gzip" }
       ]
     },
     {
-      "source": "/0.1/Build/*.wasm.gz",
+      "source": "/0.1/Build/0.1.wasm.gz",
       "headers": [
         { "key": "Content-Type", "value": "application/wasm" },
         { "key": "Content-Encoding", "value": "gzip" }
       ]
     },
     {
-      "source": "/0.1/Build/*.data.gz",
+      "source": "/0.1/Build/0.1.data.gz",
       "headers": [
         { "key": "Content-Encoding", "value": "gzip" }
       ]
     },
 
     {
-      "source": "/0.2/Build/*.js.gz",
+      "source": "/0.2/Build/0.2.js.gz",
       "headers": [
         { "key": "Content-Type", "value": "application/javascript" },
         { "key": "Content-Encoding", "value": "gzip" }
       ]
     },
     {
-      "source": "/0.2/Build/*.wasm.gz",
+      "source": "/0.2/Build/0.2.wasm.gz",
       "headers": [
         { "key": "Content-Type", "value": "application/wasm" },
         { "key": "Content-Encoding", "value": "gzip" }
       ]
     },
     {
-      "source": "/0.2/Build/*.data.gz",
+      "source": "/0.2/Build/0.2.data.gz",
       "headers": [
         { "key": "Content-Encoding", "value": "gzip" }
       ]
