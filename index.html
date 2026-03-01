@@ -270,9 +270,9 @@
       const loaderUrl = `${buildUrl}/${BUILD_NAME}.loader.js`;
 
       const config = {
-        dataUrl: `${buildUrl}/${BUILD_NAME}.data`,
-        frameworkUrl: `${buildUrl}/${BUILD_NAME}.framework.js`,
-        codeUrl: `${buildUrl}/${BUILD_NAME}.wasm`,
+        dataUrl: `${buildUrl}/${BUILD_NAME}.data.gz`,
+        frameworkUrl: `${buildUrl}/${BUILD_NAME}.framework.js.gz`,
+        codeUrl: `${buildUrl}/${BUILD_NAME}.wasm.gz`,
         streamingAssetsUrl: "StreamingAssets",
         companyName: "YourCompany",
         productName: "YourPrototype",
@@ -327,13 +327,7 @@
       else alert("Unity 还没加载完成。");
     });
 
-    document.getElementById("btnPingUnity").addEventListener("click", () => {
-      // 你 Unity 里需要：
-      // 场景中一个名叫 WebBridge 的 GameObject
-      // 挂脚本：public void RestartRun(string _) { ... }
-      const ok = callUnity("WebBridge", "RestartRun", "");
-      if (!ok) alert("Unity 还没加载完成。");
-    });
+    // btnPingUnity 已移除，如需调用 Unity 可使用 callUnity() 函数
   </script>
 </body>
 </html>
